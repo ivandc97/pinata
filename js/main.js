@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    AOS.init();
+    // AOS.init();
 
     // Video poster logics
 

@@ -512,11 +512,6 @@ img {
         justify-content: space-evenly;
         flex-wrap: wrap;
 
-        @media (max-width: 767px) {
-            margin-left: -40px;
-            margin-right: -40px;
-        }
-
         &-item {
             width: calc(50% - 40px);
             margin-bottom: 40px;
@@ -581,22 +576,17 @@ img {
         padding-bottom: 60px;
 
         .swiper {
-            overflow: unset;
-
-            &-pagination {
-                bottom: -10px;
-
-                &-bullet-active {
-                    background-color: #2d2a2a;
-                }
-            }
+            padding-top: 60px;
+            margin-top: -60px;
 
             &-button-next {
-                right: -20px;
+                top: 25px;
+                right: 1px;
             }
 
             &-button-prev {
-                left: -20px;
+                top: 25px;
+                left: 1px;
             }
 
             &-button-next,
@@ -627,10 +617,6 @@ img {
     }
 
     &__list {
-        // display: flex;
-        // justify-content: space-evenly;
-        // flex-wrap: wrap;
-
         &-item {
             width: calc(100% - 50px);
             text-align: center;
